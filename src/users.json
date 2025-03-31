@@ -1,0 +1,37 @@
+[
+	{
+		"id": 1,
+		"name": "Andres Casas",
+		"email": "walterandrescasas@hotmail.com",
+		"password": "123",
+		"role": "Admin"
+	},
+	{
+		"id": 2,
+		"name": "Marcela Ballesteros",
+		"email": "marcelab@somosmakers.com",
+		"password": "123",
+		"role": "User"
+	},
+	{
+		"id": 3,
+		"name": "Natalia Chavarriaga",
+		"email": "nataliac@somosmakers.com",
+		"password": "123",
+		"role": "Admin"
+	},
+	{
+		"id": 4,
+		"name": "Gustavo Gil",
+		"email": "gustavog@somosmakers.com",
+		"password": "123",
+		"role": "User"
+	},
+	{
+		"id": 5,
+		"name": "Cristian Bonilla",
+		"email": "cristianb@somosmakers.com",
+		"password": "123",
+		"role": "User"
+	}
+]
