@@ -45,11 +45,9 @@ const Loans: React.FC = () => {
 			};
 			await axios.post("http://localhost:5213/api/loans", newLoan);
 
-			// Limpiar el formulario
 			setAmount("");
 			setMonths("");
 
-			// Recargar la lista de préstamos
 			fetchLoans();
 		} catch (error) {
 			console.error("Error requesting loan:", error);
@@ -58,9 +56,9 @@ const Loans: React.FC = () => {
 
 	return (
 		<div>
-			<h1>Bienvenido, {user?.name}!</h1>
+			<h1>Bienvenido, {user?.name}! {user?.role}</h1>
 
-			{user?.role !== "Admin" && (
+			{user?.role !== "Admin" ? (
 				<div>
 					<div className="card" style={{width: "36rem"}}>
 						<div className="card-body">
@@ -101,6 +99,16 @@ const Loans: React.FC = () => {
 									</li>
 								))}
 							</ul>
+						</div>
+					</div>
+				</div>
+			) : (
+				<div>
+					<div className="card" style={{width: "36rem"}}>
+						<div className="card-body">
+							<form onSubmit={handleRequestLoan}>
+								<h3 className="card-title">Gestionar Solicitudes de Préstamos</h3>
+							</form>
 						</div>
 					</div>
 				</div>
